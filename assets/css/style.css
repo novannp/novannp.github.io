@@ -7,8 +7,15 @@
     box-sizing: border-box;
     font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
 }
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
 
 body {
+    overflow: auto;
+    height: 100%;
     background: #0f0c29 no-repeat;
     background: -webkit-linear-gradient(to top, #24243e, #302b63, #0f0c29);
     background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(53, 43, 156, 1) 13%, rgba(5, 4, 75, 1) 76%, rgba(53, 43, 156, 1) 100%);
