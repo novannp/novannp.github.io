@@ -1,0 +1,267 @@
+@media (max-width: 575.98px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Welcome page image animation */
+    .welcome .logo-splash {
+        height: 100px;
+        width: 100px;
+        animation: zoomOut 2s ease-in;
+    }
+
+    @keyframes zoomOut {
+        0% {
+            width: 250px;
+            height: 250px;
+        }
+
+        100% {
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+
+    .typewriter h3 {
+        font-size: 14px;
+    }
+
+    .typewriter {
+        width: 210px;
+    }
+
+    .dots {
+        visibility: hidden;
+        display: none;
+    }
+
+    /* Navbar */
+
+    .nav {
+        height: 40px;
+    }
+
+    .nav-container {
+        padding-left: 20px !important;
+
+        padding-right: 20px !important;
+    }
+
+    .start-btn {
+        width: 150px;
+        font-size: 14px !important;
+    }
+
+    .navbar-brand img {
+        height: 30px;
+    }
+
+    .navbar-collapse {
+        flex-basis: auto !important;
+        flex-grow: 0.1 !important;
+    }
+
+    /* jumbotron */
+
+    .jumbotron {
+        margin-top: 24px;
+        margin-bottom: 24px;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .jumbotron .display-4 {
+        font-size: 30px !important;
+        text-align: center;
+    }
+
+    .jumbotron .description p {
+        text-align: center;
+        font-size: 16px !important;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .jumbotron .start-btn {
+        width: 100%;
+    }
+
+    /* values */
+
+    .values p {
+        font-size: 16px !important;
+    }
+
+    /* container fluid for mobile */
+    .container-fluid {
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+    }
+
+    main .values {
+        margin-top: 100px;
+        margin-bottom: 24px;
+    }
+
+    /* expertise */
+    .expertise {
+        margin-top: 40px !important;
+        margin-bottom: 40px !important;
+    }
+
+    .expertise .row h6 {
+        text-align: center;
+    }
+
+    .expertise .row .menu h1 {
+        font-size: 20px !important;
+        line-height: 15px;
+        text-align: center;
+    }
+
+    .expertise .menu {
+        margin-top: 20px !important;
+    }
+
+    .expertise .row .col-4 {
+        width: 100%;
+    }
+
+    .expertise .row .col-5 {
+        width: 100% !important;
+    }
+
+    .expertise .menu-preview{
+        margin-left: 24px !important;
+    }
+    .expertise-desc{
+        top: -150px !important;
+        left: 0px !important;
+        width: 100% !important;
+    }
+    .expertise-desc h1{
+        font-size: 30px !important;
+        transform: scaleX(-10px) !important;
+
+    }
+
+    .expertise-desc p{
+        font-size: 16px !important;
+    }
+    .img-desc img{
+        width: 200px !important;
+    }
+
+
+    /* display4 */
+    .display-4 {
+        font-size: 30px !important;
+    }
+ 
+    /* our patrons */
+.our-patrons{
+    margin-top: 30px !important;
+    margin-bottom: 40px !important;
+}
+    /* safety */
+
+    .safety .row .col-4 {
+        width: 100% !important;
+    }
+    .safety .row .col-4 img {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .safety .safety-desc {
+        margin-left: 24px !important;
+        margin-right: 24px !important;
+    }
+    .safety .safety-desc p{
+        font-size: 16px !important;
+    }
+    .safety .row .col-5 {
+        width: 80% !important;
+    }
+
+    /* Our Patrons */
+    .our-patrons marquee .d-flex img {
+        height: 80px;
+        margin-left: 40px;
+    }
+
+    /* Get in Touch */
+    .get-in-touch .row .col-6 {
+        width: 100%;
+    }
+
+    .get-in-touch .row .col-5 .container {
+        margin-top: 100px;
+        width: 300px;
+        margin-left: -15px;
+    }
+
+    /* Footer */
+    footer .container-fluid .row > .col-4 {
+        width: 100%;
+    }
+
+    footer .container-fluid .row .col-4 p {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    footer .container-fluid .row .col-4 .row .col-6 {
+        font-size: 14px;
+    }
+
+
+    footer .container-fluid .row .col-2  {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    footer .container-fluid .row .col-2 .d-flex   {
+        width: 150px;
+        margin-top: 20px;
+    }
+}
+
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { }
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) and (min-width: 1199.98px) {
+
+    .navbar .container-fluid {
+        padding-left: 150px !important;
+        padding-right: 150px !important;
+    }
+
+    .jumbotron {
+        margin-top: 80px;
+    }
+
+    .jumbotron, .context-container, .get-in-touch {
+        padding-left: 150px !important;
+        padding-right: 150px !important;
+    }
+
+    footer .container-fluid {
+        padding-left: 150px !important;
+        padding-right: 150px !important;
+    }
+}

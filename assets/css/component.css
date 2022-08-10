@@ -1,0 +1,72 @@
+/* Custom Container */
+.container-fluid {
+    padding-left: 250px !important;
+    padding-right: 250px !important;
+}
+
+/* Make anchor highlight in center */
+.anchor {
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+}
+
+/* Welcome start button using in JS*/
+#btn-welcome {
+    width: 100px;
+}
+
+/* Dots Navigation */
+.dots {
+    z-index: 0;
+    position: fixed;
+    right: 50px;
+    top: 200px;
+    border-radius: 30px;
+    width: 50px;
+    height: 50%;
+    transition: 1s;
+    animation: opacity 1s ease-in;
+}
+
+.dots a:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+/* Button style*/
+.start-btn {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 10px;
+    width: 200px;
+    color: white;
+}
+
+.btn {
+    border-radius: 30px !important;
+    font-weight: bold !important;
+}
+
+/* Footer styles component */
+li {
+    color: white;
+}
+
+.bg-blue {
+    background-color: #08005289;
+    backdrop-filter: blur(10px);
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+

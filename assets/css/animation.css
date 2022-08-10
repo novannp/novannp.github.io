@@ -1,0 +1,171 @@
+/* Welcome page animation hiding */
+.welcome-anime-wrapper.animUp {
+    opacity: 0;
+    transition: 3s;
+    -webkit-animation: slide-out-blurred-top 0.45s cubic-bezier(0.755, 0.050, 0.855, 0.060) both;
+	        animation: slide-out-blurred-top 0.45s cubic-bezier(0.755, 0.050, 0.855, 0.060) both;
+    /* animation: hideToTop 3s backwards; */
+}
+
+@-webkit-keyframes slide-out-blurred-top {
+    0% {
+      -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+              transform: translateY(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateY(-1000px) scaleY(2) scaleX(0.2);
+              transform: translateY(-1000px) scaleY(2) scaleX(0.2);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+  }
+  @keyframes slide-out-blurred-top {
+    0% {
+      -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+              transform: translateY(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateY(-1000px) scaleY(2) scaleX(0.2);
+              transform: translateY(-1000px) scaleY(2) scaleX(0.2);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+  }
+
+  
+@keyframes hideToTop {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-1000px);
+    }
+}
+
+/* Welcome page image animation */
+.welcome .logo-splash {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    animation: zoomOut 2s ease-in;
+}
+
+@keyframes zoomOut {
+    0% {
+        width: 850px;
+        height: 850px;
+    }
+
+    100% {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+/* Typewriter animation welcome page */
+.typewriter {
+    width: 400px;
+}
+
+.typewriter h3 {
+    color: white;
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    font-weight: bold;
+    letter-spacing: .15em;
+    animation: typing 1s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 400px
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: white;
+    }
+}
+
+/* Navbar hide animation*/
+.scrolled-down {
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up {
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Jumbotron Image Animation */
+.opacity-animation {
+    animation: opacity 1s linear infinite both;
+}
+
+.opacity-animation-delayed {
+    animation: opacity 3s linear infinite both;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Expertise image and desc animation showing */
+main .expertise .menu-preview .expertise-desc.animEase {
+    transition: 500ms;
+    animation: animease 500ms ease-in-out;
+}
+
+main .expertise .menu-preview .img-desc.animEase {
+    transition: 500ms;
+    animation: animease 500ms ease-in-out;
+}
+
+@keyframes animease {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

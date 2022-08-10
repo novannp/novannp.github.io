@@ -1,58 +1,235 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/component.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/dist/bootstrap/css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/d93cc77373.js"></script>
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="/">
-
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="kbti_app">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>kbti_app</title>
-  <link rel="manifest" href="manifest.json">
-
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '222211701';
-  </script>
-  <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
+    <title>Subhika Nusantara Informatika</title>
 </head>
+
 <body>
-  <script>
-    window.addEventListener('load', function(ev) {
-      // Download main.dart.js
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        }
-      }).then(function(engineInitializer) {
-        return engineInitializer.initializeEngine();
-      }).then(function(appRunner) {
-        return appRunner.runApp();
-      });
+<!-- Welcome -->
+<div class="welcome-anime-wrapper">
+    <div id="slideUp" class="welcome">
+        <img class="mx-auto logo-splash" id="splash-logo" src="/assets/images/logo.svg" alt="">
+    </div>
+</div>
+
+<!-- Navbar -->
+<nav id="navbar" class="navbar navbar-expand-lg hide">
+    <div class="container-fluid nav-container">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/subhika-brand.png" alt="" height="40px">
+        </a>
+        <div class="justify-content-end navbar-collapse" id="navbarText">
+                <span class="navbar-text">
+                    <button class="start-btn">Let's Acquaiented</button>
+                </span>
+        </div>
+    </div>
+</nav>
+<br><br><br><br>
+
+<!-- SCROLLBAR -->
+<div class="dots d-flex flex-column justify-content-evenly">
+    <a href="#" class="btn"><i class="fa fa-circle"></i></a>
+    <a href="#values" class="btn"><i class="fa fa-circle-o"></i></a>
+    <a href="#expertises" class="btn"><i class="fa fa-circle-o"></i></a>
+    <a href="#safety" class="btn"><i class="fa fa-circle-o"></i></a>
+    <a href="#our-patrons" class="btn"><i class="fa fa-circle-o"></i></a>
+    <a href="#get-in-touch" class="btn"><i class="fa fa-circle-o"></i></a>
+</div>
+
+<!-- Jumbotron -->
+<div data-menu-achor="firstPage" class="jumbotron container-fluid">
+    <h1 class="display-4" data-aos="fade-right">We Are Subhika</h1>
+    <div class="description">
+        <p class="lead" data-aos="fade-right">As a Digital Media Analysis Agency, Subhika provides services
+            for Digital Media Analysis, and Social Media Management,
+            to optimize your company's business potential.
+        </p>
+        <p class="lead" data-aos="fade-left">We also provide services to identify potential crises and also
+            help you to resolve social media crises that occur.</p>
+    </div>
+    <br>
+    <a href="#" class="mx-auto btn btn-outline-light start-btn">Discover more</a>
+
+    <img class="opacity-animation-delayed" id="jumbotron-logo" src="assets/images/earth.webp" alt="">
+
+</div>
+
+<div class="container-fluid context-container">
+    <main>
+        <span class="anchor" id="values"></span>
+        <section class="values">
+            <p data-aos="fade-down-left" class="lead text-center">
+                Nullam lacus justo, bibendum sed dapibus vel, vehicula quis elit. Nullam gravida, odio et
+                convallis
+                condimentum, purus neque mollis ipsum, sed molestie dolor tellus vitae lacus. Suspendisse
+                fermentum
+                mauris
+                convallis lacinia laoreet.
+            </p>
+        </section>
+        <!-- Expertise -->
+        <span class="anchor" id="expertises"></span>
+        <section class="expertise" data-aos="fade-down">
+
+            <div class="row">
+                <h6 class="display-4">Expertises </h6>
+                <div class="col-4 menu">
+                    <h1 data-aos="fade-down" id="media-listening">Media Listening</h1>
+                    <h1 data-aos="fade-down" id="media-monitoring">Media Monitoring</h1>
+                    <h1 data-aos="fade-down" id="portal-media-analytic">Portal Media Analytic</h1>
+                    <h1 data-aos="fade-down" id="social-media-analytic">Social Media Analytic</h1>
+                    <h1 data-aos="fade-down" id="one-time-report">One Time Report</h1>
+                    <h1 data-aos="fade-down" id="handling">Handling</h1>
+                    <h1 data-aos="fade-down" id="post-activity">Post Activity</h1>
+                    <h1 data-aos="fade-down" id="pr-statement">PR Statement</h1>
+                </div>
+                <div class="col-5 menu-preview" id="menu-preview">
+
+                    <!-- <div class="container-fluid" id="menu-preview"></div>
+                <img src="assets/images/monitoring-ex.png" alt="">
+                <div class="expertise-desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mattis lacinia justo, eu
+                        rhoncus quam feugiat ac.</p>
+                    <p>Nullam lacus justo, bibendum sed dapibus vel, vehicula quis elit. Nullam gravida, odio et
+                        convallis condimentum, purus neque mollis ipsum, sed molestie dolor tellus vitae lacus.
+                        Suspendisse fermentum mauris convallis lacinia laoreet.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mattis lacinia justo, eu
+                        rhoncus quam feugiat ac.</p>
+                </div> -->
+                </div>
+            </div>
+
+        </section>
+        <!-- Safety Features --><span class="anchor" id="safety"></span>
+        <section data-aos="fade-right" class="safety">
+            <div class="row">
+                <div class="col-4">
+                    <img src="assets/images/security.svg" alt="">
+                </div>
+                <div class="col-5 safety-desc">
+                    <p class="lead">Nullam lacus justo, bibendum sed dapibus vel, vehicula quis elit. Nullam
+                        gravida, odio et
+                        convallis condimentum, purus neque mollis ipsum, sed molestie dolor tellus vitae lacus.
+                        Suspendisse fermentum mauris convallis lacinia laoreet.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Patrons -->
+        <span class="anchor" id="our-patrons"></span>
+        <section class="our-patrons" data-aos="fade-left">
+            <h1 class="display-6">Our Patrons</h1>
+            <br>
+            <marquee loop="infinite" scrollamount="36" direction="left">
+                <div class="d-flex justify-content-between">
+                    <img src="assets/images/logo-bandung-barat.png" height="100px" alt="">
+                    <img src="assets/images/logo-jawa-barat.png" height="100px" alt="">
+                    <img src="assets/images/logo-polres.png" height="100px" alt="">
+                    <img src="assets/images/logo-tni.png" height="100px" alt="">
+                    <img src="assets/images/logo-kai.png" height="100px" alt="">
+                </div>
+            </marquee>
+        </section>
+
+    </main>
+</div>
+<br>
+<!-- Get In Touch-->
+<span class="anchor" id="get-in-touch"></span>
+<section class="container-fluid get-in-touch" data-aos="fade-right">
+    <div class="row">
+        <div class="col-6">
+            <h2 class="display-6">Get In Touch</h2><br>
+            <input class="form-control form-control-lg form-style" type="text" placeholder="Nama"><br>
+            <input class="form-control form-control-lg form-style" type="email" placeholder="Email"><br>
+            <input class="form-control form-control-lg form-style" type="text" placeholder="Pesan"><br>
+            <a href="#" class="btn btn-outline-light start-btn">Lets Acquainted</a>
+        </div>
+        <div class="col-5">
+            <div class="container">
+                <h2>Subhika HQ</h2>
+                <p>The CEO Building, Level 12,
+                    Jl. TB Simatupang No. 18, Cilandak Barat,
+                    Cilandak Jakarta Selatan, DKI Jakarta</p>
+                <h6>Info@subhikaworldwide.id</h6>
+            </div>
+
+        </div>
+    </div>
+</section>
+<br>
+<br>
+<!-- Footer -->
+<footer class="bg-blue">
+    <div class="container-fluid">
+        <div class="row">
+        <!-- COL 4 -->
+            <div class="col-4">
+                <img id="footer-logo" src="/assets/images/subhika-brand.png" alt="">
+                <br>
+                <p class="mt-lg-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <!-- COL 4 -->
+            <div class="col-4">
+                <div class="row">
+                    <div class="col-6">
+                        <ul>
+                            <li>Lorem</li>
+                            <li>Lorem</li>
+                            <li>Lorem</li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul>
+                            <li>Lorem</li>
+                            <li>Lorem</li>
+                            <li>Lorem</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- COL 2 -->
+            <div class="col-2">
+                <h6>Follow Us :</h6>
+                <div class="d-flex justify-content-between">
+                    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                    <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                    <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p style="font-size: 10px;">©2022. All Rights Reserved. Subhika Nusantara Informatika</p>
+        <br>
+    </div>
+</footer>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        once: false,
+        mirror: true
     });
-  </script>
+</script>
+<script src="assets/dist/jquery/jquery.min.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/aos.js"></script>
+<script src="assets/js/expertise-menu.js"></script>
+<script src="assets/js/navbar-anim.js"></script>
 </body>
 </html>
