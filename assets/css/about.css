@@ -1,0 +1,33 @@
+/* Vision and Mission */
+.visi-misi{
+    margin-top: 500px;
+}
+
+#bg-visi-misi{
+    position: relative;
+    right: 0;
+    bottom: -50px;
+}
+
+/* Our Range */
+
+.our-range{
+    margin-top: 300px;
+    margin-bottom: 200px;
+}
+.bg-our-range{
+    position: absolute;
+    right: 0;
+}
+
+#map{
+    margin-top: 40px;
+}
+
+/* Quotes */
+
+.quotes h1 {
+    text-align: center;
+    margin-top: 350px;
+    margin-bottom: 350px;
+}

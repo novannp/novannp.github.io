@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/component.css">
     <link rel="stylesheet" href="assets/css/animation.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/index-responsive.css">
     <link rel="stylesheet" href="assets/dist/bootstrap/css/bootstrap.min.css">
+    <script src="./assets/dist/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/d93cc77373.js"></script>
     <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -19,88 +20,107 @@
 </head>
 
 <body>
-<!-- Welcome -->
-<div class="welcome-anime-wrapper">
-    <div id="slideUp" class="welcome">
-        <img class="mx-auto logo-splash" id="splash-logo" src="/assets/images/logo.svg" alt="">
+    <!-- Welcome -->
+    <div class="welcome-anime-wrapper">
+        <div id="slideUp" class="welcome">
+            <img class="mx-auto logo-splash" id="splash-logo" src="/assets/images/logo.svg" alt="">
+        </div>
     </div>
-</div>
 
-<!-- Navbar -->
-<nav id="navbar" class="navbar navbar-expand-lg hide">
-    <div class="container-fluid nav-container">
-        <a class="navbar-brand" href="#">
-            <img src="assets/images/subhika-brand.png" alt="" height="40px">
-        </a>
-        <div class="justify-content-end navbar-collapse" id="navbarText">
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-dark navbar-expand-lg">
+        <div class="container-fluid nav-container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/subhika-brand.png" alt="" height="40px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active"><a class="nav-link  " href="index.php">Home <span
+                                class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#get-in-touch">Get in Touch</a></li>
+                    <li class="nav-item"><a class="nav-link" href="service.html">Our Services</a></li>
+                </ul>
                 <span class="navbar-text">
                     <button class="start-btn">Let's Acquaiented</button>
                 </span>
+            </div>
+            
+
         </div>
+    </nav>
+    <br><br><br><br>
+
+    <!-- SCROLLBAR -->
+    <div class="dots d-flex flex-column justify-content-evenly">
+        <a href="#" class="btn"><i class="fa fa-circle"></i></a>
+        <a href="#values" class="btn"><i class="fa fa-circle-o"></i></a>
+        <a href="#expertises" class="btn"><i class="fa fa-circle-o"></i></a>
+        <a href="#safety" class="btn"><i class="fa fa-circle-o"></i></a>
+        <a href="#our-patrons" class="btn"><i class="fa fa-circle-o"></i></a>
+        <a href="#get-in-touch" class="btn"><i class="fa fa-circle-o"></i></a>
     </div>
-</nav>
-<br><br><br><br>
 
-<!-- SCROLLBAR -->
-<div class="dots d-flex flex-column justify-content-evenly">
-    <a href="#" class="btn"><i class="fa fa-circle"></i></a>
-    <a href="#values" class="btn"><i class="fa fa-circle-o"></i></a>
-    <a href="#expertises" class="btn"><i class="fa fa-circle-o"></i></a>
-    <a href="#safety" class="btn"><i class="fa fa-circle-o"></i></a>
-    <a href="#our-patrons" class="btn"><i class="fa fa-circle-o"></i></a>
-    <a href="#get-in-touch" class="btn"><i class="fa fa-circle-o"></i></a>
-</div>
-
-<!-- Jumbotron -->
-<div data-menu-achor="firstPage" class="jumbotron container-fluid">
-    <h1 class="display-4" data-aos="fade-right">We Are Subhika</h1>
-    <div class="description">
-        <p class="lead" data-aos="fade-right">As a Digital Media Analysis Agency, Subhika provides services
-            for Digital Media Analysis, and Social Media Management,
-            to optimize your company's business potential.
-        </p>
-        <p class="lead" data-aos="fade-left">We also provide services to identify potential crises and also
-            help you to resolve social media crises that occur.</p>
-    </div>
-    <br>
-    <a href="#" class="mx-auto btn btn-outline-light start-btn">Discover more</a>
-
-    <img class="opacity-animation-delayed" id="jumbotron-logo" src="assets/images/earth.webp" alt="">
-
-</div>
-
-<div class="container-fluid context-container">
-    <main>
-        <span class="anchor" id="values"></span>
-        <section class="values">
-            <p data-aos="fade-down-left" class="lead text-center">
-                Nullam lacus justo, bibendum sed dapibus vel, vehicula quis elit. Nullam gravida, odio et
-                convallis
-                condimentum, purus neque mollis ipsum, sed molestie dolor tellus vitae lacus. Suspendisse
-                fermentum
-                mauris
-                convallis lacinia laoreet.
+    <!-- Jumbotron -->
+    <div data-menu-achor="firstPage" class="jumbotron container-fluid">
+        <h1 class="display-4" data-aos="fade-right">We Are Subhika</h1>
+        <div class="description">
+            <p class="lead" data-aos="fade-right">As a Digital Media Analysis Agency, Subhika provides services
+                for Digital Media Analysis, and Social Media Management,
+                to optimize your company's business potential.
             </p>
-        </section>
-        <!-- Expertise -->
-        <span class="anchor" id="expertises"></span>
-        <section class="expertise" data-aos="fade-down">
+            <p class="lead" data-aos="fade-left">We also provide services to identify potential crises and also
+                help you to resolve social media crises that occur.</p>
+        </div>
+        <br>
+        <a href="#" class="mx-auto btn btn-outline-light start-btn">Discover more</a>
 
-            <div class="row">
-                <h6 class="display-4">Expertises </h6>
-                <div class="col-4 menu">
-                    <h1 data-aos="fade-down" id="media-listening">Media Listening</h1>
-                    <h1 data-aos="fade-down" id="media-monitoring">Media Monitoring</h1>
-                    <h1 data-aos="fade-down" id="portal-media-analytic">Portal Media Analytic</h1>
-                    <h1 data-aos="fade-down" id="social-media-analytic">Social Media Analytic</h1>
-                    <h1 data-aos="fade-down" id="one-time-report">One Time Report</h1>
-                    <h1 data-aos="fade-down" id="handling">Handling</h1>
-                    <h1 data-aos="fade-down" id="post-activity">Post Activity</h1>
-                    <h1 data-aos="fade-down" id="pr-statement">PR Statement</h1>
+        <img class="opacity-animation-delayed" draggable="false" id="jumbotron-logo" src="assets/images/earth.svg"
+            alt="">
+    </div>
+
+    <div class="container-fluid context-container">
+        <main>
+            <!-- Values -->
+            <span class="anchor" id="values"></span>
+            <section class="values">
+                <div class="bg-star">
+                    <img class="rotate-center" src="assets/images/bg-star.svg" alt="">
                 </div>
-                <div class="col-5 menu-preview" id="menu-preview">
+                <div class="bg-values">
+                    <img src="assets/images/bg-values.svg" alt="">
+                </div>
+                <p data-aos="fade-down-left" class="lead text-center">
+                    Creating the highest quality, science, and technology for a diverse population<br />and engaging in
+                    research and innovation that benefits society.
+                </p>
+            </section>
 
-                    <!-- <div class="container-fluid" id="menu-preview"></div>
+            <!-- Expertise -->
+            <span class="anchor" id="expertises"></span>
+            <section class="expertise" data-aos="fade-down">
+                <div class="bg-sms">
+                    <img src="assets/images/sms-bg.svg" alt="">
+                </div>
+                <div class="row">
+                    <h6 class="display-4">Expertises </h6>
+                    <div class="col-md-4 col-lg-4 menu">
+                        <h1 data-aos="fade-down" id="media-listening">Media Listening</h1>
+                        <h1 data-aos="fade-down" id="media-monitoring">Media Monitoring</h1>
+                        <h1 data-aos="fade-down" id="portal-media-analytic">Portal Media Analytic</h1>
+                        <h1 data-aos="fade-down" id="social-media-analytic">Social Media Analytic</h1>
+                        <h1 data-aos="fade-down" id="one-time-report">One Time Report</h1>
+                        <h1 data-aos="fade-down" id="handling">Handling</h1>
+                        <h1 data-aos="fade-down" id="post-activity">Post Activity</h1>
+                        <h1 data-aos="fade-down" id="pr-statement">PR Statement</h1>
+                    </div>
+                    <div class="col-md-5 menu-preview" id="menu-preview">
+                        <!-- <div class="container-fluid" id="menu-preview"></div>
                 <img src="assets/images/monitoring-ex.png" alt="">
                 <div class="expertise-desc">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mattis lacinia justo, eu
@@ -111,125 +131,147 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mattis lacinia justo, eu
                         rhoncus quam feugiat ac.</p>
                 </div> -->
+                    </div>
                 </div>
-            </div>
+            </section>
 
-        </section>
-        <!-- Safety Features --><span class="anchor" id="safety"></span>
-        <section data-aos="fade-right" class="safety">
-            <div class="row">
-                <div class="col-4">
-                    <img src="assets/images/security.svg" alt="">
+            <!-- Safety Features -->
+            <span class="anchor" id="safety"></span>
+            <section data-aos="fade-right" class="safety">
+                <div class="bg-security">
+                    <img draggable="false" src="assets/images/bg-safety.svg" alt="">
                 </div>
-                <div class="col-5 safety-desc">
-                    <p class="lead">Nullam lacus justo, bibendum sed dapibus vel, vehicula quis elit. Nullam
-                        gravida, odio et
-                        convallis condimentum, purus neque mollis ipsum, sed molestie dolor tellus vitae lacus.
-                        Suspendisse fermentum mauris convallis lacinia laoreet.</p>
+                <div class="row">
+                    <div class="col-4">
+                        <img draggable="false" src="assets/images/security.svg" alt="">
+                    </div>
+                    <div class="col-5 safety-desc">
+                        <p class="lead">Nullam lacus justo, bibendum sed dapibus vel, vehicula quis elit. Nullam
+                            gravida, odio et
+                            convallis condimentum, purus neque mollis ipsum, sed molestie dolor tellus vitae lacus.
+                            Suspendisse fermentum mauris convallis lacinia laoreet.</p>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <!-- Patrons -->
-        <span class="anchor" id="our-patrons"></span>
-        <section class="our-patrons" data-aos="fade-left">
-            <h1 class="display-6">Our Patrons</h1>
-            <br>
-            <marquee loop="infinite" scrollamount="36" direction="left">
-                <div class="d-flex justify-content-between">
-                    <img src="assets/images/logo-bandung-barat.png" height="100px" alt="">
-                    <img src="assets/images/logo-jawa-barat.png" height="100px" alt="">
-                    <img src="assets/images/logo-polres.png" height="100px" alt="">
-                    <img src="assets/images/logo-tni.png" height="100px" alt="">
-                    <img src="assets/images/logo-kai.png" height="100px" alt="">
-                </div>
-            </marquee>
-        </section>
+            </section>
 
-    </main>
-</div>
-<br>
-<!-- Get In Touch-->
-<span class="anchor" id="get-in-touch"></span>
-<section class="container-fluid get-in-touch" data-aos="fade-right">
-    <div class="row">
-        <div class="col-6">
-            <h2 class="display-6">Get In Touch</h2><br>
-            <input class="form-control form-control-lg form-style" type="text" placeholder="Nama"><br>
-            <input class="form-control form-control-lg form-style" type="email" placeholder="Email"><br>
-            <input class="form-control form-control-lg form-style" type="text" placeholder="Pesan"><br>
-            <a href="#" class="btn btn-outline-light start-btn">Lets Acquainted</a>
-        </div>
-        <div class="col-5">
-            <div class="container">
-                <h2>Subhika HQ</h2>
-                <p>The CEO Building, Level 12,
-                    Jl. TB Simatupang No. 18, Cilandak Barat,
-                    Cilandak Jakarta Selatan, DKI Jakarta</p>
-                <h6>Info@subhikaworldwide.id</h6>
-            </div>
-
-        </div>
-    </div>
-</section>
-<br>
-<br>
-<!-- Footer -->
-<footer class="bg-blue">
-    <div class="container-fluid">
-        <div class="row">
-        <!-- COL 4 -->
-            <div class="col-4">
-                <img id="footer-logo" src="/assets/images/subhika-brand.png" alt="">
+            <!-- Patrons -->
+            <span class="anchor" id="our-patrons"></span>
+            <section class="our-patrons" data-aos="fade-left">
+                <div class="bg-patron">
+                    <img src="assets/images/bg-patron.svg" alt="">
+                </div>
+                <h1 class="display-6">Our Patrons</h1>
                 <br>
-                <p class="mt-lg-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <!-- COL 4 -->
-            <div class="col-4">
+                <marquee loop="infinite" scrollamount="36" direction="left">
+                    <div class="d-flex justify-content-between img-patrons">
+                        <img src="assets/images/bandung-barat.svg" height="300px" width="300px" alt="">
+                        <img src="assets/images/jawa-barat.svg" height="300px" width="300px" alt="">
+                        <img src="assets/images/lembang.svg" height="300px" width="300px" alt="">
+                        <img src="assets/images/polri.svg" height="300px" width="300px" alt="">
+                        <img src="assets/images/polres-jabar.svg" height="300px" width="300px" alt="">
+                        <img src="assets/images/tni.svg" height="300px" width="300px" alt="">
+                        <img src="assets/images/angkasa-pura.svg" height="300px" width="300px" alt="">
+                        <img src="assets/images/bandung.svg" height="300px" width="300px" alt="">
+                        <img src="assets/images/bank-indonesia.svg" height="300px" width="300px" alt="">
+                        <img src="assets/images/bayern.svg" height="300px" width="300px" alt="">
+                        <img src="assets/images/bni.svg" height="300px" width="300px" alt="">
+                        <img src="assets/images/djp.svg" height="300px" width="300px" alt="">
+                    </div>
+                </marquee>
+            </section>
+
+            <!-- Get In Touch-->
+            <span class="anchor" id="get-in-touch"></span>
+            <section class="get-in-touch" data-aos="fade-right">
+                <div class="bg-get-in-touch ">
+                    <img src="assets/images/bg-get-in-touch.svg" alt="">
+                </div>
                 <div class="row">
                     <div class="col-6">
-                        <ul>
-                            <li>Lorem</li>
-                            <li>Lorem</li>
-                            <li>Lorem</li>
-                        </ul>
+                        <h2 class="display-6">Get In Touch</h2><br>
+                        <input class="form-control form-control-lg form-style" type="text" placeholder="Nama"><br>
+                        <input class="form-control form-control-lg form-style" type="email" placeholder="Email"><br>
+                        <input class="form-control form-control-lg form-style" type="text" placeholder="Pesan"><br>
+                        <a href="#" class="btn btn-outline-light start-btn">Lets Acquainted</a>
                     </div>
-                    <div class="col-6">
-                        <ul>
-                            <li>Lorem</li>
-                            <li>Lorem</li>
-                            <li>Lorem</li>
-                        </ul>
+                    <div class="col-5">
+                        <div class="container">
+
+                            <h2>Subhika HQ</h2>
+                            <p>The CEO Building, Level 12,
+                                Jl. TB Simatupang No. 18, Cilandak Barat,
+                                Cilandak Jakarta Selatan, DKI Jakarta</p>
+                            <h6>Info@subhikaworldwide.id</h6>
+                        </div>
                     </div>
+
                 </div>
-            </div>
-            <!-- COL 2 -->
-            <div class="col-2">
-                <h6>Follow Us :</h6>
-                <div class="d-flex justify-content-between">
-                    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-                    <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-                    <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <p style="font-size: 10px;">©2022. All Rights Reserved. Subhika Nusantara Informatika</p>
-        <br>
+            </section>
+            <br>
+            <br>
+
+        </main>
     </div>
-</footer>
+    <br>
 
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init({
-        once: false,
-        mirror: true
-    });
-</script>
-<script src="assets/dist/jquery/jquery.min.js"></script>
-<script src="assets/js/script.js"></script>
-<script src="assets/js/aos.js"></script>
-<script src="assets/js/expertise-menu.js"></script>
-<script src="assets/js/navbar-anim.js"></script>
+    <!-- Footer -->
+    <footer class="bg-blue">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- COL 4 -->
+                <div class="col-4">
+                    <img id="footer-logo" src="/assets/images/subhika-brand.png" alt="">
+                    <br>
+                    <p class="mt-lg-3">Subhika Nusantara Informatika</p>
+                </div>
+                <!-- COL 4 -->
+                <div class="col-4">
+                    <div class="row">
+                        <div class="col-6">
+                            <ul>
+                                <li>Lorem</li>
+                                <li>Lorem</li>
+                                <li>Lorem</li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul>
+                                <li>Lorem</li>
+                                <li>Lorem</li>
+                                <li>Lorem</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- COL 2 -->
+                <div class="col-2">
+                    <h6>Follow Us :</h6>
+                    <div class="d-flex justify-content-between">
+                        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p style="font-size: 10px;">©2022. All Rights Reserved. Subhika Nusantara Informatika</p>
+            <br>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: false,
+            mirror: true
+        });
+    </script>
+    <script src="assets/dist/jquery/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/expertise-menu.js"></script>
+    <script src="assets/js/navbar-anim.js"></script>
 </body>
+
 </html>

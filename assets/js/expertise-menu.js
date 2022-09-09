@@ -7,6 +7,8 @@ const handling = $("#handling");
 const postActivity = $("#post-activity");
 const prStatement = $("#pr-statement");
 
+const menu = $('.menu');
+
 mediaListening.mouseover(function () {
     $(".expertise-desc").remove();
     $(".img-desc").remove();
@@ -31,7 +33,6 @@ mediaListening.mouseover(function () {
     imgContainer.classList.add('img-desc', 'animEase')
 
     const imgDesc = document.createElement("img");
-    imgDesc.setAttribute('src', 'assets/images/monitoring-ex.png');
     imgContainer.append(imgDesc)
 
     const menuPrevContainer = document.getElementById("menu-preview");
@@ -64,7 +65,6 @@ mediaMonitoring.mouseover(function () {
     imgContainer.classList.add('img-desc', 'animEase')
 
     const imgDesc = document.createElement("img");
-    imgDesc.setAttribute('src', 'assets/images/monitoring-ex.png');
     imgContainer.append(imgDesc)
 
     const menuPrevContainer = document.getElementById("menu-preview");
@@ -96,7 +96,6 @@ portalMediaAnalytic.mouseover(function () {
     imgContainer.classList.add('img-desc', 'animEase')
 
     const imgDesc = document.createElement("img");
-    imgDesc.setAttribute('src', 'assets/images/monitoring-ex.png');
     imgContainer.append(imgDesc)
 
     const menuPrevContainer = document.getElementById("menu-preview")
@@ -128,7 +127,6 @@ socialMedialAnalytic.mouseover(function () {
     imgContainer.classList.add('img-desc', 'animEase')
 
     const imgDesc = document.createElement("img");
-    imgDesc.setAttribute('src', 'assets/images/monitoring-ex.png');
     imgContainer.append(imgDesc)
 
     const menuPrevContainer = document.getElementById("menu-preview")
@@ -160,7 +158,6 @@ oneTimeReport.mouseover(function () {
     imgContainer.classList.add('img-desc', 'animEase')
 
     const imgDesc = document.createElement("img");
-    imgDesc.setAttribute('src', 'assets/images/monitoring-ex.png');
     imgContainer.append(imgDesc)
 
     const menuPrevContainer = document.getElementById("menu-preview")
@@ -192,7 +189,6 @@ handling.mouseover(function () {
     imgContainer.classList.add('img-desc', 'animEase')
 
     const imgDesc = document.createElement("img");
-    imgDesc.setAttribute('src', 'assets/images/monitoring-ex.png');
     imgContainer.append(imgDesc)
 
     const menuPrevContainer = document.getElementById("menu-preview")
@@ -224,7 +220,6 @@ postActivity.mouseover(function () {
     imgContainer.classList.add('img-desc', 'animEase')
 
     const imgDesc = document.createElement("img");
-    imgDesc.setAttribute('src', 'assets/images/monitoring-ex.png');
     imgContainer.append(imgDesc)
 
     const menuPrevContainer = document.getElementById("menu-preview")
@@ -256,7 +251,6 @@ prStatement.mouseover(function () {
     imgContainer.classList.add('img-desc', 'animEase')
 
     const imgDesc = document.createElement("img");
-    imgDesc.setAttribute('src', 'assets/images/monitoring-ex.png');
     imgContainer.append(imgDesc)
 
     const menuPrevContainer = document.getElementById("menu-preview")

@@ -2,6 +2,10 @@ $(document).ready(function () {
     $(this).scrollTop(0);
 });
 
+$(".jumbotron").hide();
+$("main").hide();
+$("footer").hide();
+$("#navbar").hide();
 // Get element to start welcome animation
 const logoImage = document.getElementById('splash-logo');
 const welcomeDiv = document.getElementById('slideUp');
@@ -17,8 +21,15 @@ logoImage.addEventListener('animationend', (event) => {
         e.preventDefault();
         wrapper[0].classList.toggle("animUp", true);
         setTimeout(() => {
+            $("#navbar").show();
+            $(".jumbotron").show();
+            $("main").show();
+            $("footer").show();
+            AOS.refresh();
+        }, 1000);
+        setTimeout(() => {
             $(".welcome-anime-wrapper").hide();
-            window.location.hash = '#navbar';
+            // window.location.hash = '#navbar';
             AOS.refresh();
         }, 1500);
     })

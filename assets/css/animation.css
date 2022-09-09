@@ -136,6 +136,9 @@
 .opacity-animation-delayed {
     animation: opacity 3s linear infinite both;
 }
+.opacity-animation {
+    animation: opacity 2s linear infinite both;
+}
 
 @keyframes opacity {
     0% {
@@ -160,6 +163,16 @@ main .expertise .menu-preview .img-desc.animEase {
     animation: animease 500ms ease-in-out;
 }
 
+main .expertise .menu-preview .expertise-desc.animHide {
+    transition: 500ms;
+    animation: animHide 500ms ease-in-out;
+}
+
+main .expertise .menu-preview .img-desc.animHide {
+    transition: 500ms;
+    animation: animHide 500ms ease-in-out;
+}
+
 @keyframes animease {
     0% {
         opacity: 0;
@@ -169,3 +182,42 @@ main .expertise .menu-preview .img-desc.animEase {
         opacity: 1;
     }
 }
+
+@keyframes animeHide {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.rotate-center {
+	-webkit-animation: rotate-center 0.6s linear infinite both;
+	        animation: rotate-center 0.6s linear infinite both;
+}
+
+@-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  
+  

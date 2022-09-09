@@ -1,0 +1,31 @@
+@media (max-width: 575.98px) {
+
+    body {
+        overflow-x: hidden;
+        max-width: 450px;
+    }
+
+    /* Jumbotron */
+
+    main .jumbotron {
+        margin-bottom: 250px;
+    }
+
+    main .jumbotron .display-4 {
+        margin-top: 250px;
+    }
+
+    /* Visi Misi */
+    main .visi-misi {
+        margin-bottom: 250px;
+    }
+
+    main .visi-misi #bg-visi-misi {
+        left: -770px;
+    }
+
+    main .visi-misi .row {
+        width: 500px;
+        text-align: center;
+    }
+}

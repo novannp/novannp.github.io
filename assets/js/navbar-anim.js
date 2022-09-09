@@ -28,6 +28,6 @@ window.onscroll = function () {
         $(".navbar").addClass("navbar-dark bg-blue");
         $(".bg-dark").css("background-color:");
     } else {
-        $(".navbar").removeClass("navbar-dark bg-dark");
+        $(".navbar").removeClass(" bg-dark");
     }
 }

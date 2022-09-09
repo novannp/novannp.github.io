@@ -1,0 +1,78 @@
+/* Jumbotron */
+body{
+    overflow-x: hidden;
+}
+
+.section-container{
+    width: 100%;
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+#jumbotron-logo {
+    position: absolute;
+    top: 90px !important;
+}
+
+.jumbotron {
+    margin-bottom: 450px;
+}
+
+/* Our Solving */
+.our-solving{
+    background-image: url(../images/img-our-solving.svg);
+    background-repeat: no-repeat;
+    
+}
+.our-solving-img{
+    margin-left: 100px;
+    position: absolute;
+}
+/* Listening */
+
+.listening{
+    background-image: url('../images/image-listening.svg');
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.listening-features{
+    margin-top: 150px !important;
+}
+/* Monitoring */
+.monitoring{
+    background-image: url('../images/bg-monitoring.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+/* Tracking */
+.tracking{
+    background-image: url('../images/bg-tracking.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+/* Profiling */
+
+.profiling{
+    background-image: url('../images/bg-profiling.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/* Post Activity */
+.post-activity{
+    background-image: url('../images/bg-postactivity.svg');
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* pr Consultant */
+.pr-consultant{
+    background-image: url('../images/bg-pr-consulting.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
